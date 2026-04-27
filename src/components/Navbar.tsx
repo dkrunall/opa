@@ -90,9 +90,9 @@ export function Navbar() {
       <AnimatePresence>
         {isOpen && (
            <motion.div
-              initial={{ opacity: 0, backdropBlur: "0px" }}
-              animate={{ opacity: 1, backdropBlur: "20px" }}
-              exit={{ opacity: 0, backdropBlur: "0px" }}
+              initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              animate={{ opacity: 1, backdropFilter: "blur(20px)" }}
+              exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
               className="fixed inset-0 z-[60] bg-oasis-umber/95 flex flex-col items-center justify-center space-y-10"
            >
               <button 
