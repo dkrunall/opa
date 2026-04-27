@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  --color-sand-light: #F4E8D1;
+  --color-sand-base: #DBC2A4;
+  --color-sand-dark: #A68B6D;
+  --color-oasis-gold: #D4AF37;
+  --color-oasis-umber: #3D2B1F;
+  --color-oasis-accent: #C69B7B;
+  
+  --font-sans: var(--font-inter);
+  --font-stylized: var(--font-stylized);
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #F4E8D1;
+  --foreground: #3D2B1F;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stylized);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Custom Utilities */
+.grainy-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.desert-gradient {
+  background: linear-gradient(135deg, #F4E8D1 0%, #DBC2A4 50%, #C69B7B 100%);
+}
+
+.text-stylized {
+  font-family: var(--font-stylized);
+  letter-spacing: 0.3em;
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+.badge-outline {
+  border: 1px solid rgba(61, 43, 31, 0.2);
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
 }
