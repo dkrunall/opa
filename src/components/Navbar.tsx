@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useBooking } from "./BookingContext";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/about" },
+  { name: "Night Life", href: "/nightlife" },
+  { name: "Fine Dine", href: "/fine-dine" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -18,7 +19,6 @@ export function Navbar() {
   const [activeLink, setActiveLink] = useState("Home");
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
-  const { openModal } = useBooking();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
@@ -35,16 +35,16 @@ export function Navbar() {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 md:px-16 h-32 pointer-events-none"
+        className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 md:px-10 lg:px-16 h-16 md:h-24 lg:h-32 pointer-events-none"
       >
         {/* Left: Branding */}
         <div className="flex-1 flex items-center pointer-events-auto">
           <Link href="/" className="group/logo">
             <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="w-20 md:w-24 h-12 flex items-center justify-center transition-all duration-700"
+              className="px-6 py-3 bg-oasis-umber/25 backdrop-blur-2xl border border-white/10 rounded-full flex items-center justify-center transition-all duration-700 shadow-xl"
             >
-              <img src="/logo.png" alt="OPA Logo" className="w-full h-full object-contain" />
+              <img src="/logo.png" alt="OPA Logo" className="h-6 md:h-8 w-auto object-contain brightness-0 invert" />
             </motion.div>
           </Link>
         </div>
@@ -69,10 +69,10 @@ export function Navbar() {
 
         {/* Right: Reservations */}
         <div className="flex-1 flex items-center justify-end pointer-events-auto">
-          <button onClick={openModal} className="hidden md:block relative group/res bg-oasis-umber border border-oasis-gold/30 backdrop-blur-xl px-10 py-4 rounded-full text-[9px] font-bold uppercase tracking-[0.3em] text-oasis-gold hover:bg-white hover:text-oasis-umber transition-all duration-500 shadow-2xl overflow-hidden">
+          <Link href="/book-a-table" className="hidden lg:block relative group/res bg-oasis-umber border border-oasis-gold/30 backdrop-blur-xl px-8 py-3 lg:px-10 lg:py-4 rounded-full text-[9px] font-bold uppercase tracking-[0.3em] text-oasis-gold hover:bg-white hover:text-oasis-umber transition-all duration-500 shadow-2xl overflow-hidden">
              <span className="relative z-10">Reservations</span>
              <div className="absolute inset-0 bg-white translate-y-full group-hover/res:translate-y-0 transition-transform duration-500 -z-10" />
-          </button>
+          </Link>
           
           <button
             className="lg:hidden w-12 h-12 flex items-center justify-center text-sand-light bg-oasis-umber/40 rounded-full backdrop-blur-xl"
@@ -82,8 +82,6 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Hair-thin Connecting Line (High Fashion) */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[90%] h-[1px] bg-gradient-to-r from-transparent via-oasis-gold/20 to-transparent pointer-events-none" />
       </motion.nav>
 
       {/* Mobile Menu Overlay */}
@@ -123,9 +121,9 @@ export function Navbar() {
                 transition={{ delay: 0.5 }}
                 className="pt-20"
               >
-                 <button onClick={() => { setIsOpen(false); openModal(); }} className="bg-oasis-gold px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest text-oasis-umber">
+                 <Link href="/book-a-table" onClick={() => setIsOpen(false)} className="bg-oasis-gold px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest text-oasis-umber">
                    Book Now
-                 </button>
+                 </Link>
               </motion.div>
            </motion.div>
         )}

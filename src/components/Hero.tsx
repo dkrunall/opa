@@ -52,24 +52,21 @@ export function Hero() {
     <section 
       ref={containerRef as any} 
       onMouseMove={handleMouseMove}
-      className="relative h-[120vh] w-full overflow-hidden bg-sand-light"
+      className="relative min-h-screen md:h-[120vh] w-full overflow-hidden bg-sand-light"
     >
       {/* Background Layer (Sky/Distant Dunes) */}
       <motion.div ref={bgRef} style={{ y: y1 }} className="absolute inset-0 z-0 scale-110">
-        <img 
-          src="/images/desert.png" 
-          alt="Desert Oasis" 
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
-        {/* Logo Locked to the Sun in the Wallpaper */}
-        <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 md:w-48">
-          <img 
-            src="/logo.png" 
-            alt="" 
-            className="w-full h-full object-contain opacity-80 mix-blend-luminosity brightness-75" 
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-sand-light/20 to-sand-light"></div>
+        >
+          <source src="/opa-web.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-sand-light"></div>
       </motion.div>
 
       {/* Atmospheric Dust Particles */}
@@ -107,7 +104,7 @@ export function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-        <div className="mb-24 invisible h-32 md:h-48" aria-hidden="true" />
+        <div className="mb-12 md:mb-24 invisible h-16 md:h-32 lg:h-48" aria-hidden="true" />
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -115,17 +112,17 @@ export function Hero() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="space-y-6"
         >
-          <h1 className="text-4xl md:text-8xl font-stylized text-oasis-umber tracking-[0.4em] mb-4">
+          <h1 className="text-4xl md:text-8xl font-stylized text-sand-light tracking-[0.4em] mb-4 drop-shadow-2xl">
             The Oasis Sanctuary
           </h1>
-          <div className="w-24 h-[1px] bg-oasis-accent mx-auto"></div>
-          <p className="text-[10px] uppercase tracking-[1em] text-oasis-accent">Where Time Dissolves into Rhythm</p>
+          <div className="w-24 h-[1px] bg-oasis-gold mx-auto"></div>
+          <p className="text-[10px] uppercase tracking-[1em] text-sand-light font-bold drop-shadow-md">Where Time Dissolves into Rhythm</p>
         </motion.div>
       </div>
 
       {/* Premium Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-4">
-         <span className="text-[8px] uppercase tracking-[0.6em] text-oasis-umber/40 font-bold">Discover More</span>
+         <span className="text-[8px] uppercase tracking-[0.6em] text-sand-light/60 font-bold drop-shadow-sm">Discover More</span>
          <div className="w-[1px] h-20 bg-oasis-umber/10 relative overflow-hidden">
             <motion.div 
                animate={{ y: ['-100%', '100%'] }}

@@ -17,7 +17,7 @@ export function Introduction() {
     <section 
       ref={containerRef}
       id="about" 
-      className="relative py-40 bg-sand-light overflow-hidden"
+      className="relative py-20 md:py-40 bg-sand-light overflow-hidden"
     >
       {/* Drifting Background Pattern */}
       <motion.div 
@@ -30,7 +30,7 @@ export function Introduction() {
         style={{ y: palmY }}
         className="absolute -right-20 top-40 w-96 h-96 opacity-10 pointer-events-none"
       >
-        <img src="/images/ambience.webp" alt="" className="w-full h-full object-cover rounded-full mix-blend-multiply filter blur-3xl" />
+        <img src="/lounge/DSC03258.jpg" alt="" className="w-full h-full object-cover rounded-full mix-blend-multiply filter blur-3xl" />
       </motion.div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -42,7 +42,7 @@ export function Introduction() {
             className="space-y-6"
           >
             <span className="text-oasis-accent text-[10px] uppercase tracking-[0.8em] font-bold block mb-4">The Mediterranean Sanctuary</span>
-            <h2 className="text-6xl md:text-[10rem] font-stylized text-oasis-umber leading-none tracking-tight">
+            <h2 className="text-4xl md:text-7xl lg:text-[10rem] font-stylized text-oasis-umber leading-none tracking-tight">
                Our <br /> Legacy
             </h2>
           </motion.div>
@@ -52,7 +52,7 @@ export function Introduction() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-xl md:text-[2.5rem] font-light text-oasis-umber/70 leading-tight italic"
+            className="text-base md:text-xl lg:text-[2rem] font-light text-oasis-umber/70 leading-tight italic"
           >
             "Born from the golden sands and the azure heart of the Mediterranean, OPA is not just a destination. It is a portal to a world where time dissolves into rhythm and flavor."
           </motion.p>

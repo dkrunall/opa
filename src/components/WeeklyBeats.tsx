@@ -105,7 +105,7 @@ export function WeeklyBeats() {
               </span>
               <span className="text-[9px] font-bold uppercase tracking-[0.5em] text-oasis-accent underline underline-offset-8">Live Entertainment Weekly</span>
             </div>
-            <h2 className="text-6xl md:text-[8rem] font-stylized text-sand-light leading-none tracking-tight">
+            <h2 className="text-4xl md:text-6xl lg:text-[8rem] font-stylized text-sand-light leading-none tracking-tight">
               Weekly Pulse
             </h2>
           </div>
@@ -146,7 +146,7 @@ export function WeeklyBeats() {
           return (
             <motion.div
               key={event.day}
-              className="beat-card flex-none w-[300px] md:w-[380px] h-[520px] md:h-[580px] snap-start relative rounded-[2rem] overflow-hidden group cursor-pointer select-none"
+              className="beat-card flex-none w-[260px] md:w-[380px] h-[460px] md:h-[580px] snap-start relative rounded-[2rem] overflow-hidden group cursor-pointer select-none"
               onClick={() => setActiveIdx(i)}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -186,7 +186,7 @@ export function WeeklyBeats() {
               </div>
 
               {/* Giant day watermark */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 font-stylized text-[140px] md:text-[160px] leading-none text-white/[0.04] pointer-events-none select-none pr-4">
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 font-stylized text-[80px] md:text-[140px] leading-none text-white/[0.04] pointer-events-none select-none pr-4">
                 {event.day}
               </div>
 

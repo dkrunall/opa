@@ -1,37 +1,60 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Instagram } from "lucide-react";
 
 const instagramPhotos = [
-  "https://images.unsplash.com/photo-1541532138244-3837405633a1?q=80&w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1574071318508-1cdbad80ad50?q=80&w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&h=400&fit=crop",
+  "/food/30 TEN -08223.png",
+  "/lounge/DSC03273.jpg",
+  "/cafe/DSC03218.jpg",
+  "/food/30 TEN -08192.png",
+  "/lounge/DSC03339.jpg",
+  "/cafe/DSC03321.jpg",
 ];
 
 export function SocialGallery() {
   return (
-    <section className="py-24 bg-sand-light">
-      <div className="container mx-auto px-6 text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-stylized text-oasis-umber tracking-[0.3em] mb-4">Social Media</h2>
-        <button className="badge-outline text-oasis-umber uppercase text-[10px] tracking-[0.3em] mb-8">@opabarandcafe</button>
+    <section className="py-24 md:py-40 bg-sand-light overflow-hidden">
+      <div className="container mx-auto px-6 text-center mb-20 space-y-6">
+        <div className="flex flex-col items-center space-y-4">
+          <span className="text-oasis-accent text-[10px] uppercase tracking-[0.8em] font-bold block">The Vibe</span>
+          <h2 className="text-4xl md:text-6xl font-stylized text-oasis-umber tracking-[0.3em]">Social Sanctuary</h2>
+        </div>
+        
+        <a 
+          href="https://instagram.com/opabarandcafe" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 px-8 py-4 bg-white border border-oasis-umber/10 rounded-full text-oasis-umber uppercase text-[10px] tracking-[0.4em] font-bold hover:bg-oasis-umber hover:text-sand-light transition-all duration-500 group shadow-sm"
+        >
+          <Instagram size={16} className="group-hover:scale-110 transition-transform" />
+          @opabarandcafe
+        </a>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 px-2">
         {instagramPhotos.map((photo, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            whileHover={{ scale: 1.05 }}
-            className="aspect-square overflow-hidden cursor-pointer grayscale hover:grayscale-0 transition-all duration-500 cursor-view"
+            whileHover={{ scale: 0.98 }}
+            className="aspect-square overflow-hidden cursor-pointer relative group"
           >
-            <img src={photo} alt="" className="w-full h-full object-cover" />
+            <img src={photo} alt="" className="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" />
+            <div className="absolute inset-0 bg-oasis-umber/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+               <Instagram size={24} className="text-white opacity-60" />
+            </div>
           </motion.div>
         ))}
+      </div>
+      
+      <div className="mt-16 text-center">
+        <p className="text-[10px] uppercase tracking-[0.5em] text-oasis-accent/40 font-bold italic">
+          Shared moments from the heart of Mumbai
+        </p>
       </div>
     </section>
   );

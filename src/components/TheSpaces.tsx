@@ -1,50 +1,50 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Music, Wind, GlassWater } from "lucide-react";
+import { Users, Music, GlassWater, Coffee, Sparkles } from "lucide-react";
 
 const venues = [
   {
-    name: "Oasis Main Bar",
-    capacity: "150 Pax",
+    name: "The Lounge",
+    capacity: "120 Pax",
     size: "large",
-    feature: "Panoramic Views",
-    icon: <Music size={16} />,
+    feature: "Curated Comfort",
+    icon: <Users size={16} />,
+    image: "/lounge/DSC03257.jpg"
+  },
+  {
+    name: "Main Bar",
+    capacity: "150 Pax",
+    size: "wide",
+    feature: "Liquid Artistry",
+    icon: <GlassWater size={16} />,
     image: "/images/bar.webp"
   },
   {
-    name: "The Terrace",
+    name: "The Console",
+    capacity: "60 Pax",
+    size: "small",
+    feature: "Sonic Pulse",
+    icon: <Music size={16} />,
+    image: "/images/dj.png"
+  },
+  {
+    name: "The Cafe",
     capacity: "80 Pax",
     size: "small",
-    feature: "Starlit Sky",
-    icon: <Wind size={16} />,
-    image: "/images/experience1.webp"
-  },
-  {
-    name: "Private Sanctuary",
-    capacity: "40 Pax",
-    size: "small",
-    feature: "Bottle Service",
-    icon: <GlassWater size={16} />,
-    image: "/images/experience2.webp"
-  },
-  {
-    name: "The Lounge",
-    capacity: "100 Pax",
-    size: "wide",
-    feature: "Custom Cocktails",
-    icon: <Users size={16} />,
-    image: "/images/ambience.webp"
+    feature: "Sun-Drenched Flavors",
+    icon: <Coffee size={16} />,
+    image: "/cafe/DSC03208.jpg"
   }
 ];
 
 export function TheSpaces() {
   return (
-    <section id="spaces" className="py-40 bg-oasis-umber overflow-hidden">
+    <section id="spaces" className="py-20 md:py-40 bg-oasis-umber overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-24 text-center space-y-6">
            <span className="text-[10px] uppercase tracking-[0.6em] text-oasis-accent">Exclusive Venues</span>
-           <h2 className="text-5xl md:text-8xl font-stylized text-sand-light tracking-tight">The Sanctuary Spaces</h2>
+           <h2 className="text-3xl md:text-6xl lg:text-8xl font-stylized text-sand-light tracking-tight">The Sanctuary Spaces</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-auto md:h-[900px]">
@@ -72,7 +72,7 @@ export function TheSpaces() {
               {/* Blueprint Overlay Effect */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-1000 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:20px_20px]" />
 
-              <div className="absolute inset-0 p-10 flex flex-col justify-between z-10">
+              <div className="absolute inset-0 p-6 md:p-10 flex flex-col justify-between z-10">
                 <div className="flex justify-between items-start">
                    <div className="w-12 h-12 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center text-oasis-accent group-hover:bg-oasis-accent group-hover:text-oasis-umber transition-all duration-500">
                      {venue.icon}

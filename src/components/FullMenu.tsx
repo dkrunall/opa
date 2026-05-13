@@ -89,7 +89,7 @@ export function FullMenu() {
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-16 border-b border-sand-light/10 pb-10">
           <div>
             <p className="text-[10px] uppercase tracking-[0.5em] text-oasis-accent mb-4">Opa Bar & Cafe · Sakinaka</p>
-            <h2 className="text-5xl md:text-8xl font-stylized text-sand-light leading-none">Our Menu</h2>
+            <h2 className="text-4xl md:text-6xl lg:text-8xl font-stylized text-sand-light leading-none">Our Menu</h2>
           </div>
           <div className="mt-6 md:mt-0 text-right">
             <p className="text-sand-light/40 text-xs uppercase tracking-widest">Avg spend for two</p>
@@ -134,7 +134,7 @@ export function FullMenu() {
             {currentCategory.items.map((item, i) => (
               <div
                 key={i}
-                className="bg-oasis-umber p-8 hover:bg-white/5 transition-colors duration-300 group"
+                className="bg-oasis-umber p-5 md:p-8 hover:bg-white/5 transition-colors duration-300 group"
               >
                 <div className="flex items-start gap-3">
                   <VegBadge veg={item.veg} />

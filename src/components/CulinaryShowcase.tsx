@@ -21,14 +21,14 @@ export function CulinaryShowcase() {
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
 
   return (
-    <section ref={sectionRef} id="menu" className="py-28 md:py-44 bg-sand-light overflow-hidden">
+    <section ref={sectionRef} id="menu" className="py-16 md:py-28 lg:py-44 bg-sand-light overflow-hidden">
       <div className="container mx-auto px-6">
 
         {/* Header row */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
             <p className="text-[10px] uppercase tracking-[0.5em] text-oasis-accent mb-3">Peninsula Grand · Sakinaka</p>
-            <h2 className="text-5xl md:text-8xl font-stylized text-oasis-umber leading-none">The Taste</h2>
+            <h2 className="text-4xl md:text-6xl lg:text-8xl font-stylized text-oasis-umber leading-none">The Taste</h2>
           </div>
           <div className="flex gap-8 md:gap-12 shrink-0">
             {highlights.map((h) => (
@@ -49,11 +49,11 @@ export function CulinaryShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="md:col-span-8 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden bg-oasis-umber shadow-2xl min-h-[480px] md:min-h-[620px] cursor-pointer"
+            className="md:col-span-8 md:row-span-2 relative group rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-oasis-umber shadow-2xl min-h-[320px] md:min-h-[480px] lg:min-h-[620px] cursor-pointer"
             onClick={scrollToMenu}
           >
             <motion.img
-              src="/images/food_real.webp"
+              src="/food/30 TEN -08241.png"
               alt="Signature Dish"
               style={{ y: imgY }}
               className="absolute inset-0 w-full h-[115%] object-cover opacity-70 group-hover:opacity-85 group-hover:scale-[1.03] transition-all duration-[1.5s]"
@@ -69,7 +69,7 @@ export function CulinaryShowcase() {
 
             {/* Bottom content */}
             <div className="absolute bottom-10 left-10 right-10 space-y-4">
-              <h3 className="text-4xl md:text-6xl font-stylized text-sand-light leading-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-6xl font-stylized text-sand-light leading-tight">
                 Lamb<br />Moussaka
               </h3>
               <p className="text-sand-light/60 text-sm leading-relaxed max-w-xs hidden md:block font-sans normal-case tracking-normal">
