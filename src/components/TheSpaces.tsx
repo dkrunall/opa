@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Music, GlassWater, Coffee, Sparkles } from "lucide-react";
+import { Users, GlassWater, Coffee } from "lucide-react";
 
 const venues = [
   {
@@ -21,17 +21,9 @@ const venues = [
     image: "/images/bar.webp"
   },
   {
-    name: "The Console",
-    capacity: "60 Pax",
-    size: "small",
-    feature: "Sonic Pulse",
-    icon: <Music size={16} />,
-    image: "/images/dj.png"
-  },
-  {
     name: "The Cafe",
     capacity: "80 Pax",
-    size: "small",
+    size: "wide",
     feature: "Sun-Drenched Flavors",
     icon: <Coffee size={16} />,
     image: "/cafe/DSC03208.jpg"

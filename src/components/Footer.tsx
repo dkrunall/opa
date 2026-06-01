@@ -83,7 +83,7 @@ export function Footer() {
                   
                   <div className="group/item">
                     <p className="text-[9px] uppercase tracking-widest text-oasis-accent font-bold mb-2">Reservations</p>
-                    <p className="text-sand-light/70 text-lg font-medium">+91 91676 66737</p>
+                    <p className="text-sand-light/70 text-lg font-medium">+91 81049 61636</p>
                   </div>
 
                   <div className="group/item">

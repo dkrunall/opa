@@ -8,7 +8,7 @@ import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
 
-const RESTAURANT_WHATSAPP = "919167666737";
+const RESTAURANT_WHATSAPP = "918104961636";
 
 const timeSlots = [
   "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM",
@@ -128,7 +128,7 @@ export default function BookATablePage() {
                     {[
                       { icon: MapPin, label: "Location", value: "Peninsula Grand, Sakinaka, Andheri E" },
                       { icon: Clock, label: "Hours", value: "12 PM – 1:30 AM (Daily)" },
-                      { icon: Phone, label: "Phone", value: "+91 91676 66737" },
+                      { icon: Phone, label: "Phone", value: "+91 81049 61636" },
                       { icon: Mail, label: "Email", value: "info@opabarandcafe.in" },
                     ].map((item, i) => (
                       <div key={i} className="flex gap-4 items-start">

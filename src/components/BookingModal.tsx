@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, Clock, Users, Sparkles, Phone, User, MessageSquare } from "lucide-react";
 import { useBooking } from "./BookingContext";
 
-const RESTAURANT_WHATSAPP = "919167666737";
+const RESTAURANT_WHATSAPP = "918104961636";
 
 const timeSlots = [
   "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM",

@@ -276,7 +276,7 @@ export function ArtistRoster() {
   const tabs = [
     { id: "international", label: "International", icon: Globe },
     { id: "indian", label: "Indian", icon: MapPin },
-    { id: "residents", label: "Residents", icon: Users },
+    // { id: "residents", label: "Residents", icon: Users },
   ];
 
   const getArtists = () => {

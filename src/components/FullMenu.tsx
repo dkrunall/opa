@@ -92,8 +92,8 @@ export function FullMenu() {
             <h2 className="text-4xl md:text-6xl lg:text-8xl font-stylized text-sand-light leading-none">Our Menu</h2>
           </div>
           <div className="mt-6 md:mt-0 text-right">
-            <p className="text-sand-light/40 text-xs uppercase tracking-widest">Avg spend for two</p>
-            <p className="text-oasis-gold font-stylized text-3xl mt-1">₹1,500</p>
+            <p className="text-sand-light/40 text-xs uppercase tracking-widest">Oasis Sanctuary</p>
+            <p className="text-oasis-gold font-stylized text-3xl mt-1">Andheri E</p>
           </div>
         </div>
 
@@ -159,10 +159,10 @@ export function FullMenu() {
           </p>
           <div className="flex gap-6 items-center">
             <a
-              href="tel:+919594691939"
+              href="tel:+918104961636"
               className="text-[10px] font-bold uppercase tracking-widest text-oasis-accent hover:text-oasis-gold transition-colors"
             >
-              +91 9594691939
+              +91 81049 61636
             </a>
             <a
               href="https://www.zomato.com/mumbai/opa-bar-cafe-peninsula-grand-hotel-sakinaka/order"

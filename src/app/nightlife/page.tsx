@@ -104,45 +104,45 @@ export default function NightlifePage() {
       <WeeklyBeats />
 
       {/* SEO — Nightlife & Bar Keywords */}
-      <section className="py-14 md:py-24 lg:py-32 bg-black">
+      <section className="py-14 md:py-24 lg:py-32 bg-sand-light border-t border-oasis-umber/10">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-14 space-y-3">
               <span className="text-oasis-accent text-[10px] uppercase tracking-[0.8em] font-bold block">
                 Nightlife · Cocktails · Open Till Late Night · Andheri East
               </span>
-              <h2 className="text-3xl md:text-5xl font-stylized text-sand-light">
+              <h2 className="text-3xl md:text-5xl font-stylized text-oasis-umber">
                 Andheri East After Dark
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mb-12 md:mb-16">
-              <div className="space-y-5 text-sand-light/55 text-base leading-relaxed font-light">
+              <div className="space-y-5 text-oasis-umber/70 text-base leading-relaxed font-light">
                 <p>
-                  When it comes to <strong className="text-sand-light/80">nightlife in Andheri</strong>, OPA Bar &amp;
+                  When it comes to <strong className="text-oasis-umber font-semibold">nightlife in Andheri</strong>, OPA Bar &amp;
                   Cafe sets the gold standard. Voted among the{" "}
-                  <strong className="text-sand-light/80">best clubs in Mumbai</strong> and the{" "}
-                  <strong className="text-sand-light/80">best lounge in Mumbai</strong>, OPA is the ultimate
+                  <strong className="text-oasis-umber font-semibold">best clubs in Mumbai</strong> and the{" "}
+                  <strong className="text-oasis-umber font-semibold">best lounge in Mumbai</strong>, OPA is the ultimate
                   after-dark destination for those who demand more from their nights. We are{" "}
-                  <strong className="text-sand-light/80">open till late night</strong> — because great nights
+                  <strong className="text-oasis-umber font-semibold">open till late night</strong> — because great nights
                   shouldn't have an early curfew.
                 </p>
                 <p>
-                  Looking for <strong className="text-sand-light/80">pubs in Andheri East Mumbai</strong> or the{" "}
-                  <strong className="text-sand-light/80">best cocktail bar in Andheri East</strong>? OPA delivers
-                  world-class <strong className="text-sand-light/80">best LIT cocktails</strong>, a curated full bar,
+                  Looking for <strong className="text-oasis-umber font-semibold">pubs in Andheri East Mumbai</strong> or the{" "}
+                  <strong className="text-oasis-umber font-semibold">best cocktail bar in Andheri East</strong>? OPA delivers
+                  world-class <strong className="text-oasis-umber font-semibold">best LIT cocktails</strong>, a curated full bar,
                   and a dance floor powered by resident DJs spinning deep house, RnB, commercial, and Arabic tech. The
-                  best <strong className="text-sand-light/80">music and ambience in Andheri East</strong> — guaranteed
+                  best <strong className="text-oasis-umber font-semibold">music and ambience in Andheri East</strong> — guaranteed
                   every night.
                 </p>
                 <p>
                   As Andheri's most sought-after{" "}
-                  <strong className="text-sand-light/80">lounge bar in Andheri East</strong>, OPA wraps every visit
+                  <strong className="text-oasis-umber font-semibold">lounge bar in Andheri East</strong>, OPA wraps every visit
                   in an authentic{" "}
-                  <strong className="text-sand-light/80">best Arabian ambience</strong> — think lanterns, palm trees,
+                  <strong className="text-oasis-umber font-semibold">best Arabian ambience</strong> — think lanterns, palm trees,
                   flowing drapes, and that unmistakable energy that only{" "}
-                  <strong className="text-sand-light/80">best bars in Andheri East</strong> can deliver. Among all
-                  <strong className="text-sand-light/80"> best party places in Andheri East</strong>, OPA stands alone.
+                  <strong className="text-oasis-umber font-semibold">best bars in Andheri East</strong> can deliver. Among all
+                  <strong className="text-oasis-umber font-semibold"> best party places in Andheri East</strong>, OPA stands alone.
                 </p>
               </div>
 
@@ -157,16 +157,16 @@ export default function NightlifePage() {
                 ].map((card, i) => (
                   <div
                     key={i}
-                    className="border border-sand-light/10 rounded-2xl p-5 space-y-1 hover:border-oasis-accent/40 hover:bg-sand-light/5 transition-all duration-300"
+                    className="border border-oasis-umber/15 rounded-2xl p-5 space-y-1 hover:border-oasis-accent/40 hover:bg-oasis-umber/5 transition-all duration-300"
                   >
-                    <p className="font-stylized text-sand-light text-sm leading-snug">{card.label}</p>
-                    <p className="text-[11px] text-sand-light/35">{card.sub}</p>
+                    <p className="font-stylized text-oasis-umber text-sm leading-snug">{card.label}</p>
+                    <p className="text-[11px] text-oasis-umber/55">{card.sub}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="border-t border-sand-light/10 pt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-sand-light/40 font-light">
+            <div className="border-t border-oasis-umber/10 pt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-oasis-umber/40 font-light">
               <p>📍 Hotel Peninsula Grand, Sakinaka Junction, Andheri East, Mumbai — 400072</p>
               <p>🕐 Open till late night · Mon · Wed · Fri · Sat &nbsp;|&nbsp; 🚇 Sakinaka Metro</p>
             </div>

@@ -8,7 +8,7 @@ import { MapPin, Phone, Mail, Clock, TrainFront } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact OPA Bar & Cafe | Bar & Restaurant in Andheri East Mumbai | Find Us",
   description:
-    "Find OPA Bar & Cafe near Sakinaka Metro Station, Andheri East, Mumbai. Best bar, cafe, lounge & Mediterranean restaurant. Places to eat and drink near me in Andheri East. Open till late night. Call: +91 91676 66737.",
+    "Find OPA Bar & Cafe near Sakinaka Metro Station, Andheri East, Mumbai. Best bar, cafe, lounge & Mediterranean restaurant. Places to eat and drink near me in Andheri East. Open till late night. Call: +91 81049 61636.",
   keywords: [
     "places to eat and drink near me",
     "bar and restaurant in Andheri east",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact OPA Bar & Cafe | Andheri East, Mumbai — Near Sakinaka Metro",
     description:
-      "Visit OPA Bar & Cafe at Hotel Peninsula Grand, Sakinaka, Andheri East, Mumbai. Best bar, cafe & Mediterranean restaurant. Open till late night. +91 91676 66737.",
+      "Visit OPA Bar & Cafe at Hotel Peninsula Grand, Sakinaka, Andheri East, Mumbai. Best bar, cafe & Mediterranean restaurant. Open till late night. +91 81049 61636.",
     url: "https://opabarandcafe.in/contact",
     siteName: "OPA Bar & Cafe",
     locale: "en_IN",
@@ -90,7 +90,7 @@ export default function ContactPage() {
               <div className="space-y-8">
                 {[
                   { icon: <MapPin size={20} />, label: "Address", value: "Hotel Peninsula Grand, Sakinaka Junction, Andheri East, Mumbai — 400072" },
-                  { icon: <Phone size={20} />, label: "Phone", value: "+91 91676 66737" },
+                  { icon: <Phone size={20} />, label: "Phone", value: "+91 81049 61636" },
                   { icon: <Mail size={20} />, label: "Email", value: "info@opabarandcafe.in" },
                   { icon: <Clock size={20} />, label: "Hours", value: "Open daily — Lunch & Dinner · Till late night" },
                   { icon: <TrainFront size={20} />, label: "Metro", value: "Opposite Sakinaka Metro Station (Line 1)" },
@@ -178,9 +178,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 pt-4">
               {[
-                { stat: "₹1,500", label: "Avg for Two" },
                 { stat: "Late Night", label: "Open Every Night" },
                 { stat: "30+", label: "Signature Dishes" },
                 { stat: "4 Zones", label: "Unique Spaces" },

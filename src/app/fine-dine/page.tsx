@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { CulinaryShowcase } from "@/components/CulinaryShowcase";
-import { FullMenu } from "@/components/FullMenu";
+import { FoodGallery } from "@/components/FoodGallery";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
 import { FinestTable } from "@/components/FinestTable";
@@ -57,14 +57,6 @@ export default function FineDinePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/60 to-oasis-umber/10" />
 
-        {/* Badge top-right */}
-        <div className="absolute top-20 md:top-36 right-8 md:right-16">
-          <div className="bg-oasis-gold/15 border border-oasis-gold/30 backdrop-blur-sm rounded-2xl px-5 py-3 text-center">
-            <p className="text-[8px] uppercase tracking-[0.4em] text-oasis-gold font-bold">Avg Spend</p>
-            <p className="text-2xl font-stylized text-sand-light mt-1">₹1,500</p>
-            <p className="text-[8px] uppercase tracking-[0.3em] text-sand-light/40 mt-0.5">for two</p>
-          </div>
-        </div>
 
         <div className="container mx-auto px-6 relative z-10 space-y-6">
           <p className="text-[10px] uppercase tracking-[0.6em] text-oasis-gold font-bold">Peninsula Grand · Sakinaka</p>
@@ -91,7 +83,7 @@ export default function FineDinePage() {
 
       <CulinaryShowcase />
       <Marquee text="TASTE • TRADITION • MEDITERRANEAN SOUL" />
-      <FullMenu />
+      <FoodGallery />
 
       <FinestTable />
 

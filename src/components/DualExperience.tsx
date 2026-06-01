@@ -7,8 +7,8 @@ const fineDineHighlights = [
   "30+ Signature Dishes",
   "Mediterranean Soul",
   "Cocktails & Full Bar",
-  "Avg ₹1,500 for Two",
-  "Lamb Moussaka & Pides",
+  "Wood-Fired Specialties",
+  "Turkish Pides & Kebabs",
   "Baklava & Desserts",
 ];
 
