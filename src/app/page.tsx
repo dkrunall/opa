@@ -12,9 +12,12 @@ import { Footer } from "@/components/Footer";
 import { StickyActions } from "@/components/StickyActions";
 
 export const metadata: Metadata = {
-  title: "OPA Bar & Cafe | Best Bar, Cafe & Mediterranean Restaurant in Andheri East Mumbai",
+  title: "Best Bar in Andheri | Opa Bar & Cafe Drinks & Vibes",
   description:
-    "OPA Bar & Cafe — the best bar, cafe, lounge & Mediterranean restaurant in Andheri East, Mumbai. Rooftop dining, LIT cocktails, Arabian ambience & live music. Open till late night near Sakinaka Metro Station.",
+    "Discover the best bar in Andheri at Opa Bar & Cafe. Enjoy great food, cocktails, music, and a vibrant nightlife. Visit today for a great experience!",
+  verification: {
+    google: "Ln46_hCpJWUHZuqib6O6-kzjFAE6diG_cKBPDYZRATo",
+  },
   keywords: [
     "best bar in Andheri",
     "best cafe in Andheri",
@@ -63,9 +66,19 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumb = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opabarandcafe.in/" },
+  ],
+};
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-sand-light selection:bg-oasis-umber selection:text-sand-light">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <main className="min-h-screen bg-sand-light selection:bg-oasis-umber selection:text-sand-light">
       <Navbar />
       <Hero />
       <StickyActions />
@@ -82,6 +95,7 @@ export default function Home() {
 
       <Footer />
     </main>
+    </>
   );
 }
 

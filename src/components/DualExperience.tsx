@@ -75,7 +75,7 @@ export function DualExperience() {
                 </div>
 
                 <Link
-                  href="/fine-dine"
+                  href="/fine-dine-in-andheri-east"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-oasis-gold text-oasis-umber font-bold uppercase tracking-widest text-[10px] rounded-full hover:bg-white transition-all duration-300 w-fit group/btn"
                 >
                   Explore Fine Dine
@@ -120,7 +120,7 @@ export function DualExperience() {
                 </div>
 
                 <Link
-                  href="/nightlife"
+                  href="/nightlife-in-andheri"
                   className="inline-flex items-center gap-2 px-8 py-4 border border-oasis-gold text-oasis-gold font-bold uppercase tracking-widest text-[10px] rounded-full hover:bg-oasis-gold hover:text-oasis-umber transition-all duration-300 w-fit group/btn"
                 >
                   Explore Night Life

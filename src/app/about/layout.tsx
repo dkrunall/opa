@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About OPA Bar & Cafe | Best Bar & Cafe in Andheri East, Mumbai",
+  title: "Best Cafe in Andheri | About Opa Bar & Cafe",
   description:
-    "Discover OPA Bar & Cafe — the best bar, cafe, and Mediterranean restaurant in Andheri East, Mumbai. Arabian ambience, LIT cocktails, rooftop dining, and nightlife. Open till late night near Sakinaka Metro Station.",
+    "Looking for the best cafe in Andheri? Discover Opa Bar & Cafe—great food, drinks, cozy ambiance, and a perfect spot to relax and unwind. Visit now!",
   keywords: [
     "best bar in Andheri",
     "best cafe in Andheri",
@@ -59,6 +59,20 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumb = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opabarandcafe.in/" },
+    { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://opabarandcafe.in/about" },
+  ],
+};
+
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      {children}
+    </>
+  );
 }

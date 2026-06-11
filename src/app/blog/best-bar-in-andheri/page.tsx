@@ -56,9 +56,21 @@ const faqs = [
   },
 ];
 
+const breadcrumb = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opabarandcafe.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://opabarandcafe.in/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Best Bar in Andheri for Nightlife", "item": "https://opabarandcafe.in/blog/best-bar-in-andheri" },
+  ],
+};
+
 export default function BlogBestBarPage() {
   return (
-    <main className="min-h-screen bg-sand-light selection:bg-oasis-umber selection:text-sand-light">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <main className="min-h-screen bg-sand-light selection:bg-oasis-umber selection:text-sand-light">
       <Navbar />
       <StickyActions />
 
@@ -331,5 +343,6 @@ export default function BlogBestBarPage() {
 
       <Footer />
     </main>
+    </>
   );
 }
