@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, Clock, Users, Sparkles, Phone, User, MessageSquare, MapPin, Mail } from "lucide-react";
+import { Calendar, Clock, Users, Sparkles, Phone, User, MessageSquare, MapPin } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
@@ -129,7 +129,6 @@ export default function BookATablePage() {
                       { icon: MapPin, label: "Location", value: "Peninsula Grand, Sakinaka, Andheri E" },
                       { icon: Clock, label: "Hours", value: "12 PM – 1:30 AM (Daily)" },
                       { icon: Phone, label: "Phone", value: "+91 81049 61636" },
-                      { icon: Mail, label: "Email", value: "info@opabarandcafe.in" },
                     ].map((item, i) => (
                       <div key={i} className="flex gap-4 items-start">
                          <item.icon size={16} className="text-oasis-accent mt-1 shrink-0" />

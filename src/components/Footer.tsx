@@ -91,10 +91,6 @@ export function Footer() {
                     <p className="text-sand-light/70 text-sm font-light">5:00 PM – 3:00 AM · Daily</p>
                   </div>
 
-                  <div className="group/item">
-                    <p className="text-[9px] uppercase tracking-widest text-oasis-accent font-bold mb-2">Support</p>
-                    <p className="text-sand-light/70 text-sm font-light">info@opabarandcafe.in</p>
-                  </div>
                 </div>
               </div>
             </div>

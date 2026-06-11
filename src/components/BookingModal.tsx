@@ -138,7 +138,6 @@ export function BookingModal() {
                         { label: "Location", value: "Peninsula Grand, Sakinaka, Andheri E" },
                         { label: "Hours", value: "12 PM – 1:30 AM (Daily)" },
                         { label: "Phone", value: "+91 91676 66737" },
-                        { label: "Email", value: "info@opabarandcafe.in" },
                       ].map((item) => (
                         <div key={item.label}>
                           <p className="text-[9px] uppercase tracking-[0.35em] text-oasis-accent/70">{item.label}</p>

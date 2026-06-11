@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
-import { MapPin, Phone, Mail, Clock, TrainFront } from "lucide-react";
+import { MapPin, Phone, Clock, TrainFront } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact OPA Bar & Cafe | Bar & Restaurant in Andheri East Mumbai | Find Us",
@@ -102,7 +102,6 @@ export default function ContactPage() {
                 {[
                   { icon: <MapPin size={20} />, label: "Address", value: "Hotel Peninsula Grand, Sakinaka Junction, Andheri East, Mumbai — 400072" },
                   { icon: <Phone size={20} />, label: "Phone", value: "+91 81049 61636" },
-                  { icon: <Mail size={20} />, label: "Email", value: "info@opabarandcafe.in" },
                   { icon: <Clock size={20} />, label: "Hours", value: "Open daily — 5:00 PM to 3:00 AM" },
                   { icon: <TrainFront size={20} />, label: "Metro", value: "Opposite Sakinaka Metro Station (Line 1)" },
                 ].map((item, i) => (

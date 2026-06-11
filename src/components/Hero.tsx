@@ -104,7 +104,7 @@ export function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-        <div className="mb-12 md:mb-24 invisible h-16 md:h-32 lg:h-48" aria-hidden="true" />
+        <div className="mb-6 md:mb-12 invisible h-8 md:h-16 lg:h-24" aria-hidden="true" />
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
