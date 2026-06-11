@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const fineDineHighlights = [
-  "30+ Signature Dishes",
-  "Mediterranean Soul",
-  "Cocktails & Full Bar",
-  "Wood-Fired Specialties",
-  "Turkish Pides & Kebabs",
-  "Baklava & Desserts",
+  "Gourmet Feast",
+  "Elevated Dining",
+  "Curated Cocktails",
+  "Middle-Eastern Soul",
+  "Modern Levantine Cuisine",
+  "Crafted Confections",
 ];
 
 const nightLifeHighlights = [
-  "Live DJs 4 Nights a Week",
-  "Deep House & RnB",
-  "Arabic Tech Beats",
-  "Ladies Night — Wednesdays",
-  "Signature Fridays",
-  "Peak Saturdays",
+  "Nightlife Reimagined",
+  "Cocktails and Club Energy",
+  "Bollytech Takeovers",
+  "Midnight Muse Nights",
+  "Global Artist Takeovers",
+  "Weekend Soundscapes",
 ];
 
 export function DualExperience() {
@@ -61,7 +61,7 @@ export function DualExperience() {
                   <span className="text-[9px] uppercase tracking-[0.6em] text-oasis-gold font-bold">Culinary Mastery</span>
                   <h3 className="text-4xl md:text-5xl lg:text-6xl font-stylized text-sand-light mt-2">Fine Dine</h3>
                   <p className="text-sand-light/55 font-sans text-sm leading-relaxed mt-3 max-w-sm">
-                    Mediterranean flavors from sun-drenched coasts and spice-laden markets — every plate a story.
+                    Bold middle-eastern flavours, artisanal cocktails, and an atmosphere designed for afterhours indulgence.
                   </p>
                 </div>
 
@@ -106,7 +106,7 @@ export function DualExperience() {
                   <span className="text-[9px] uppercase tracking-[0.6em] text-oasis-gold font-bold">The After Dark</span>
                   <h3 className="text-4xl md:text-5xl lg:text-6xl font-stylized text-sand-light mt-2">Night Life</h3>
                   <p className="text-sand-light/55 font-sans text-sm leading-relaxed mt-3 max-w-sm">
-                    World-class beats meet an electric Arabic atmosphere — Mumbai's most charged nightlife experience.
+                    Immersive beats, endless nights — OPA is where the city comes alive after dark.
                   </p>
                 </div>
 

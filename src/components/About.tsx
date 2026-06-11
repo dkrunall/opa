@@ -54,14 +54,14 @@ export function Introduction() {
             transition={{ delay: 0.3 }}
             className="text-base md:text-xl lg:text-[2rem] font-light text-oasis-umber/70 leading-tight italic"
           >
-            "Born from the golden sands and the azure heart of the Mediterranean, OPA is not just a destination. It is a portal to a world where time dissolves into rhythm and flavor."
+            "More than a destination, OPA is a celebration of flavour, rhythm, and nocturnal energy. From Levantine cuisine to sophisticated nightlife, every night is designed to awaken the senses."
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-12">
             {[
-              { label: "Cuisine", detail: "Chef-Driven Art" },
-              { label: "Mixology", detail: "Liquid Gold" },
-              { label: "Vibe", detail: "Deep House Pulse" }
+              { label: "Cuisine", detail: "Curated Middle Eastern Plates" },
+              { label: "Mixology", detail: "Signature Elixirs" },
+              { label: "Vibe", detail: "Elevated Nightlife Culture" }
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
