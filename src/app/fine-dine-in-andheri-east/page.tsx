@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { CulinaryShowcase } from "@/components/CulinaryShowcase";
@@ -61,10 +62,13 @@ export default function FineDinePage() {
 
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
-        <img
+        <Image
           src="/food/30 TEN -08232.png"
           alt="Best Mediterranean Lebanese Arabic Restaurant Andheri East Mumbai — OPA Bar & Cafe Fine Dine"
-          className="absolute inset-0 w-full h-full object-cover opacity-45"
+          fill
+          priority
+          className="object-cover opacity-45"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/60 to-oasis-umber/10" />
 

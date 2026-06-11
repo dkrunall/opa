@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
@@ -15,10 +16,13 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
-        <img
+        <Image
           src="/lounge/DSC03299.jpg"
           alt="OPA Bar & Cafe — Best Bar and Cafe in Andheri East Mumbai"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          fill
+          priority
+          className="object-cover opacity-60"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/40 to-transparent" />
 

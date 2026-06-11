@@ -11,12 +11,14 @@ import { BookingModal } from "@/components/BookingModal";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const stylized = Cinzel_Decorative({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-stylized",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -54,7 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Tag Manager */}
-        <Script id="gtm-head" strategy="beforeInteractive">
+        <Script id="gtm-head" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=

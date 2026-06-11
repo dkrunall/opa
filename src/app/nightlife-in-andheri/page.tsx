@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { WeeklyBeats } from "@/components/WeeklyBeats";
@@ -64,10 +65,13 @@ export default function NightlifePage() {
 
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-black">
-        <img
+        <Image
           src="/lounge/DSC03303.jpg"
           alt="Best Nightlife in Andheri East Mumbai — OPA Bar & Cafe Open Till Late Night"
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          fill
+          priority
+          className="object-cover opacity-50"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10" />
 

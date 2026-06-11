@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
+import Image from "next/image";
 import { MapPin, Phone, Clock, TrainFront } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -62,10 +63,13 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
-        <img
+        <Image
           src="/lounge/DSC03299.jpg"
           alt="OPA Bar & Cafe — Bar and Restaurant in Andheri East Mumbai Near Sakinaka"
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          fill
+          priority
+          className="object-cover opacity-50"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/60 to-transparent z-10" />
         <div className="container mx-auto px-6 relative z-20 space-y-6">

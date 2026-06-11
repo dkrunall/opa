@@ -61,6 +61,7 @@ export function Hero() {
           loop
           muted
           playsInline
+          preload="none"
           className="w-full h-full object-cover"
         >
           <source src="/opa-web.mp4" type="video/mp4" />
@@ -69,30 +70,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-sand-light"></div>
       </motion.div>
 
-      {/* Atmospheric Dust Particles */}
-      <div className="absolute inset-0 z-[5] pointer-events-none">
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: Math.random() * 1000 }}
-            animate={{ 
-              y: [0, -100, 0],
-              opacity: [0, 0.4, 0],
-              x: [0, Math.random() * 50 - 25, 0]
-            }}
-            transition={{ 
-              duration: 10 + Math.random() * 10, 
-              repeat: Infinity,
-              delay: Math.random() * 10
-            }}
-            className="absolute w-1 h-1 bg-white rounded-full blur-[1px]"
-            style={{ 
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`
-            }}
-          />
-        ))}
-      </div>
 
       {/* Foreground Palm Fringe (Parallax) */}
       <motion.div 
