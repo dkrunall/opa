@@ -75,12 +75,12 @@ export default function FineDinePage() {
             Fine<br />Dine
           </h1>
           <p className="text-sand-light/55 max-w-lg font-sans text-base md:text-lg leading-relaxed">
-            Immerse yourself in a Mediterranean symphony of flavors — where every dish tells a story of sun-drenched coasts and spice-laden markets.
+            Bold middle-eastern flavours, artisanal cocktails, and an atmosphere designed for afterhours indulgence.
           </p>
 
           {/* Quick highlights strip */}
           <div className="flex flex-wrap gap-3 pt-2">
-            {["30+ Dishes", "Cocktail Bar", "Sheesha Lounge", "Desserts", "Mediterranean & Indian"].map((tag) => (
+            {["Gourmet Feast", "Elevated Dining", "Curated Cocktails", "Middle-Eastern Soul", "Modern Levantine Cuisine", "Crafted Confections"].map((tag) => (
               <span
                 key={tag}
                 className="bg-white/8 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest text-sand-light/70"

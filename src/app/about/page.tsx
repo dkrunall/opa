@@ -129,33 +129,33 @@ export default function AboutPage() {
             {[
               {
                 icon: <GlassWater size={32} />,
-                title: "Best Cocktail Bar in Andheri East",
-                desc: "Handcrafted LIT cocktails, signature sips, and innovative mixology. OPA is Andheri's most celebrated cocktail bar — from sunset to late night, every pour is a statement.",
+                title: "Middle Eastern Culinary Experience",
+                desc: "Authentic Lebanese, Turkish, and Mediterranean flavours crafted with fresh ingredients — signature mezze platters, grilled specialties, handcrafted cocktails, and a premium dining experience in the heart of Andheri East.",
               },
               {
                 icon: <Sparkles size={32} />,
-                title: "Rooftop Cafe & Healthy Food",
-                desc: "An aesthetic rooftop cafe in Andheri with a menu built for the health-conscious. Fresh, wholesome Mediterranean ingredients meet bold Levantine flavors in every dish.",
+                title: "Rooftop Cafe & Late Night Destination",
+                desc: "An aesthetic rooftop café and nightlife destination where great food, vibrant vibes, and late-night energy come together — perfect for sunset evenings, dinner dates, and after-hours gatherings.",
               },
               {
                 icon: <Music size={32} />,
-                title: "Best Music & Ambience",
-                desc: "Live music nights, resident DJs, and curated soundscapes. The best music and ambience in Andheri East, OPA sets the tone from golden hour to after midnight.",
+                title: "Best Nightlife Ambience",
+                desc: "Live DJs, curated music nights, immersive lighting, and an energetic lounge atmosphere make OPA one of Andheri East's favourite spots for nightlife and unforgettable evenings.",
               },
               {
                 icon: <Wind size={32} />,
-                title: "Best Arabian & Lounge Ambience",
-                desc: "Palm trees, lanterns, flowing drapes, and warm candlelight. Experience the best Arabian ambience in Mumbai — an immersive Middle-Eastern escape right in Andheri East.",
+                title: "The Art of Social Dining",
+                desc: "Designed for conversations, celebrations, and memorable nights, OPA brings together elevated cuisine, stylish ambience, and a vibrant social scene.",
               },
               {
                 icon: <Users size={32} />,
-                title: "Resto Bar & Dining Destination",
-                desc: "The finest resto bar in Andheri East — combining a world-class kitchen with a full bar. Perfect for date nights, family dinners, corporate evenings, and group celebrations.",
+                title: "Perfect for Parties & Celebrations",
+                desc: "Whether it's birthdays, corporate gatherings, private events, brunches, or exclusive celebrations, OPA offers the ideal mix of hospitality, music, food, and ambience for every occasion.",
               },
               {
                 icon: <Coffee size={32} />,
-                title: "On Till Late Night",
-                desc: "Andheri's go-to late-night destination. OPA stays open till late night, making it the best party place in Andheri East for those who live for the night.",
+                title: "Arabian Inspired Interiors & Vibes",
+                desc: "Warm lighting, rich aesthetics, elegant décor, lantern-inspired ambience, and stylish lounge seating create an immersive Arabian-Mediterranean escape right in Mumbai.",
               },
             ].map((item, i) => (
               <motion.div
@@ -208,7 +208,7 @@ export default function AboutPage() {
                 {[
                   { name: "Mediterranean", tag: "Best Mediterranean Food Restaurant in Andheri East" },
                   { name: "Lebanese", tag: "Authentic Levantine Cuisine Mumbai" },
-                  { name: "Arabic", tag: "Best Arabic Restaurant Andheri East Mumbai" },
+                  { name: "Middle Eastern", tag: "Best Arabic Restaurant Andheri East Mumbai" },
                   { name: "Turkish", tag: "Best Turkish Restaurant in Andheri" },
                 ].map((c, i) => (
                   <div key={i} className="border border-oasis-umber/15 rounded-2xl p-5 space-y-1">
@@ -262,7 +262,7 @@ export default function AboutPage() {
                 The Night <br /> Never Ends
               </h2>
               <p className="text-sand-light/60 text-lg md:text-2xl leading-relaxed font-light max-w-3xl mx-auto">
-                When the sun sets over Andheri East, OPA transforms into Mumbai's most electric nightlife destination. Voted among the best party places in Andheri East and the best lounge in Mumbai, our venue pulses with world-class DJs, live performances, and a crowd that knows how to celebrate. We are open till late night — because some moments are too good to rush.
+                From high-energy DJ nights and live performances to signature cocktails and an unmatched party atmosphere, OPA is one of Andheri East's favourite <strong className="text-sand-light/80 font-medium">nightlife destinations</strong> — voted among the <strong className="text-sand-light/80 font-medium">best party places in Andheri East</strong> and the <strong className="text-sand-light/80 font-medium">best lounge in Mumbai</strong>. Open till late, every night brings great music, vibrant energy, and unforgettable experiences under one roof.
               </p>
             </motion.div>
 
@@ -271,20 +271,22 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl mx-auto w-full"
             >
               {[
-                { stat: "Late Night", label: "Open Every Night" },
-                { stat: "Live Beats", label: "Music Every Weekend" },
-                { stat: "#1", label: "Lounge in Andheri East" },
-                { stat: "4 Zones", label: "Unique Spaces to Explore" },
-              ].map((s, i) => (
+                "Where the Night Comes Alive",
+                "Your Everyday Escape",
+                "Curated Entertainment Experiences",
+                "Every Weekend — Signature Nights & Headlining Acts",
+                "Mumbai's Renowned Rooftop Destination",
+                "2 Unique Zones — Designed for Every Mood",
+              ].map((item, i) => (
                 <div
                   key={i}
-                  className="border border-sand-light/10 rounded-2xl p-6 space-y-1 text-center"
+                  className="flex items-center gap-3 border border-sand-light/10 rounded-2xl px-5 py-4 text-left"
                 >
-                  <p className="text-2xl md:text-3xl font-stylized text-oasis-accent">{s.stat}</p>
-                  <p className="text-sand-light/40 text-xs uppercase tracking-widest">{s.label}</p>
+                  <span className="w-1.5 h-1.5 rounded-full bg-oasis-accent shrink-0" />
+                  <p className="text-sand-light/70 text-sm font-light leading-snug">{item}</p>
                 </div>
               ))}
             </motion.div>
