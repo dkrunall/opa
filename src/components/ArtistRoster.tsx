@@ -409,10 +409,7 @@ export function ArtistRoster() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl space-y-6"
           >
-            <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-oasis-umber/5 rounded-full border border-oasis-umber/10">
-              <span className="w-2 h-2 rounded-full bg-oasis-accent animate-pulse" />
-              <p className="text-[10px] uppercase tracking-[0.5em] text-oasis-accent font-bold">Artist Lineup 2019 — 2026</p>
-            </div>
+
             <h2 className="text-6xl md:text-9xl font-stylized text-oasis-umber leading-[0.85] tracking-tighter">
               Global<br />Roster
             </h2>
