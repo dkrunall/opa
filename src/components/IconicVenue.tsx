@@ -27,10 +27,10 @@ export function IconicVenue() {
 
               <div className="space-y-6 text-oasis-umber/60 text-base md:text-lg leading-relaxed font-light">
                 <p>
-                  Searching for the <strong className="text-oasis-umber/90 font-medium italic">best bar in Andheri</strong> or an <strong className="text-oasis-umber/90 font-medium italic">aesthetic cafe in Andheri East</strong> that truly delivers? OPA Bar & Cafe is celebrated as the finest <strong className="text-oasis-umber/90 font-medium italic">bar and restaurant in Andheri East</strong> — combining a world-class cocktail bar, rooftop lounge, and a vibrant nightlife sanctuary.
+                  OPA Bar & Café — the finest <strong className="text-oasis-umber/90 font-medium italic">bar and restaurant in Andheri East</strong> — brings together elevated Middle Eastern dining, signature cocktails, <strong className="text-oasis-umber/90 font-medium italic">rooftop cafe in Andheri</strong> ambience, and immersive nightlife in the heart of Andheri East. Celebrated as the <strong className="text-oasis-umber/90 font-medium italic">best bar in Andheri</strong> and the most <strong className="text-oasis-umber/90 font-medium italic">aesthetic cafe in Andheri East</strong>, OPA is your ultimate after-dark sanctuary.
                 </p>
                 <p>
-                  From <strong className="text-oasis-umber/90 font-medium italic">pubs in Andheri East Mumbai</strong> to finding the <strong className="text-oasis-umber/90 font-medium italic">best lounge in Mumbai</strong>, we answer every craving. Our <strong className="text-oasis-umber/90 font-medium italic">rooftop cafe in Andheri</strong> is loved for healthy food and a <strong className="text-oasis-umber/90 font-medium italic">best Arabian ambience in Mumbai</strong>.
+                  From sunset dinners to deep house afterhours, experience Mumbai's most electric Arabian-inspired rooftop destination. Whether you're exploring <strong className="text-oasis-umber/90 font-medium italic">pubs in Andheri East Mumbai</strong>, seeking the <strong className="text-oasis-umber/90 font-medium italic">best lounge in Mumbai</strong>, or craving the <strong className="text-oasis-umber/90 font-medium italic">best Arabian ambience in Mumbai</strong> — every night at OPA is designed to go beyond midnight.
                 </p>
               </div>
 

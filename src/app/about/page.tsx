@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-oasis-umber/40 backdrop-blur-[2px]" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 className="text-4xl md:text-8xl font-stylized text-sand-light/80 tracking-[0.5em] text-center px-6">
-            Where Mumbai Meets the Med
+            Where Mumbai Meets the Mediterranean Spirit
           </h2>
         </div>
       </section>
@@ -201,7 +201,7 @@ export default function AboutPage() {
                   A Cuisine Born <br /> From Ancient Shores
                 </h2>
                 <p className="text-oasis-umber/60 text-lg md:text-xl leading-relaxed font-light">
-                  OPA is celebrated as the best Mediterranean restaurant, best Lebanese restaurant, best Arabic restaurant, and best Turkish restaurant in Andheri East, Mumbai. Our kitchen draws from centuries of coastal culinary wisdom — mezze platters, slow-roasted meats, stone-baked breads, and vibrant herb-laden salads that transport you straight to the shores of the Mediterranean and the souks of Beirut.
+                  Inspired by the timeless flavours of the Middle East and the allure of Arabian nights, OPA — celebrated as the best Mediterranean restaurant, best Lebanese restaurant, best Arabic restaurant, and best Turkish restaurant in Andheri East, Mumbai — brings together Levantine cuisine, handcrafted cocktails, immersive music, and elevated afterhours energy into one unforgettable experience. From vibrant mezze and slow-roasted delicacies to candlelit ambience and curated nightlife, every night at OPA is designed to indulge the senses beyond midnight.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-6">
