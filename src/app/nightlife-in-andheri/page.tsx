@@ -93,12 +93,12 @@ export default function NightlifePage() {
             Night<br />Life
           </h1>
           <p className="text-sand-light/55 max-w-lg font-sans text-base md:text-lg leading-relaxed">
-            When the moon rises, OPA transforms. World-class beats fuse with an electric Arabic atmosphere — Mumbai's most charged nightlife destination.
+            Immersive beats, endless nights — OPA is where the city comes alive after dark.
           </p>
 
           {/* Quick highlights strip */}
           <div className="flex flex-wrap gap-3 pt-2">
-            {["Deep House", "RnB & Hip-Hop", "Commercial Beats", "Arabic Tech", "Ladies Night", "Bottle Service"].map((tag) => (
+            {["Nightlife Reimagined", "Cocktails & Club Energy", "Bollytech Takeovers", "Midnight Muse Nights", "Global Artist Takeovers", "Weekend Soundscapes"].map((tag) => (
               <span
                 key={tag}
                 className="bg-white/8 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest text-sand-light/70"
@@ -112,7 +112,7 @@ export default function NightlifePage() {
 
       <Marquee text="BEATS • VIBES • THE AFTER DARK" />
       <ArtistRoster />
-      <WeeklyBeats />
+      {/* <WeeklyBeats /> */}
 
       {/* SEO — Nightlife & Bar Keywords */}
       <section className="py-14 md:py-24 lg:py-32 bg-sand-light border-t border-oasis-umber/10">

@@ -106,6 +106,26 @@ const internationalArtists = [
     color: "#D4AF37",
     year: "2024",
   },
+  {
+    name: "Mestiza",
+    origin: "International",
+    genre: "Tech House · Afro House",
+    bio: "Mestiza brings a bold, multicultural energy to every set — fusing Latin, African, and Middle Eastern rhythms into a high-voltage dance floor experience.",
+    accolades: "Global Touring Artist · Cross-Cultural Sonic Pioneer",
+    image: "/artist/mestiza.png",
+    color: "#C69B7B",
+    year: "2025",
+  },
+  {
+    name: "Shimza",
+    origin: "South Africa",
+    genre: "Afro House · Afro Tech",
+    bio: "South Africa's most globally recognised Afro house DJ — Ashley Raphala, known as Shimza, has headlined Tomorrowland, Coachella and the world's finest venues with his euphoric tribal sound.",
+    accolades: "Tomorrowland · Coachella · Afro House Icon",
+    image: "/artist/shimza.jpg",
+    color: "#D4AF37",
+    year: "2025",
+  },
 ];
 
 /* ─── Indian Headliners ─── */
@@ -189,6 +209,96 @@ const indianArtists = [
     image: "/images/artists/king.jpg",
     color: "#D4AF37",
     year: "2023",
+  },
+  {
+    name: "DJ Ganesh",
+    origin: "India",
+    genre: "Bollywood · Club",
+    bio: "One of India's most celebrated DJs, DJ Ganesh has been setting dance floors on fire with his high-energy Bollywood and commercial sets across the country's biggest venues.",
+    accolades: "India's Premier Club DJ",
+    image: "/artist/dj-ganesh.jpg",
+    color: "#D4AF37",
+    year: "2024",
+  },
+  {
+    name: "Almost Human",
+    origin: "India",
+    genre: "Electronic · Experimental",
+    bio: "Almost Human pushes the boundaries of Indian electronic music with genre-defying soundscapes that blend organic textures and cutting-edge production.",
+    accolades: "Indian Electronic Innovator",
+    image: "/artist/almost-human.jpg",
+    color: "#C69B7B",
+    year: "2024",
+  },
+  {
+    name: "Madoc",
+    origin: "India",
+    genre: "House · Electronic",
+    bio: "Madoc is a rising force in India's underground electronic scene, delivering hypnotic house sets that captivate crowds from the first beat to the last.",
+    accolades: "India's Underground House Pioneer",
+    image: "/artist/madoc.jpg",
+    color: "#D4AF37",
+    year: "2024",
+  },
+  {
+    name: "PropheC",
+    origin: "Canada · Punjab",
+    genre: "Punjabi R&B · Soul",
+    bio: "The Punjabi R&B icon whose soulful vocals and heartfelt lyrics have garnered hundreds of millions of streams globally. PropheC's OPA set was an emotional journey through modern Punjabi music.",
+    accolades: "500M+ Streams · Punjabi R&B Pioneer",
+    image: "/artist/prophec.jpg",
+    color: "#C69B7B",
+    year: "2024",
+  },
+  {
+    name: "Jass Manak",
+    origin: "Punjab, India",
+    genre: "Punjabi Pop",
+    bio: "One of Punjab's most loved young voices — Jass Manak's melodic Punjabi pop anthems have taken over playlists across India and the diaspora with their irresistible charm.",
+    accolades: "1B+ Combined Streams · Punjabi Pop Star",
+    image: "/artist/jass-manak.jpg",
+    color: "#D4AF37",
+    year: "2024",
+  },
+  {
+    name: "Prabh",
+    origin: "Delhi, India",
+    genre: "Hindi Rap · Hip-Hop",
+    bio: "Prabh Deep is Delhi's most compelling rapper — blending raw Hindi street poetry with cinematic production. His debut album Class-Sikh is considered a landmark in Indian hip-hop.",
+    accolades: "Class-Sikh · India Hip-Hop Pioneer",
+    image: "/artist/prabh.jpg",
+    color: "#C69B7B",
+    year: "2025",
+  },
+  {
+    name: "Parmish Verma",
+    origin: "Punjab, India",
+    genre: "Punjabi Pop · Bhangra",
+    bio: "Actor, director, and Punjabi pop powerhouse — Parmish Verma's energetic stage presence and chart-topping tracks make every performance an unforgettable spectacle.",
+    accolades: "Multi-Platinum Punjabi Artist · Actor",
+    image: "/artist/parmish-verma.jpg",
+    color: "#D4AF37",
+    year: "2025",
+  },
+  {
+    name: "Raftaar",
+    origin: "India",
+    genre: "Rap · Hip-Hop · Desi Bass",
+    bio: "One of India's most electrifying live performers — Raftaar's high-octane rap sets and iconic Desi Bass anthems ignite every stage he steps on. A true pioneer of mainstream Indian rap.",
+    accolades: "India's Rap Icon · 1B+ Streams",
+    image: "/artist/raftaar.jpg",
+    color: "#C69B7B",
+    year: "2025",
+  },
+  {
+    name: "Anyasa",
+    origin: "India",
+    genre: "Progressive House · Electronic",
+    bio: "Anushka and Rasesh — India's most celebrated electronic duo. Anyasa's progressive soundscapes and emotive builds have taken them to stages across the world's finest clubs and festivals.",
+    accolades: "India's #1 Electronic Duo · Global Touring",
+    image: "/artist/anyasa.jpg",
+    color: "#D4AF37",
+    year: "2025",
   },
 ];
 
@@ -357,44 +467,6 @@ export function ArtistRoster() {
           </AnimatePresence>
         </div>
 
-        <div className="mt-40">
-          <div className="flex items-center gap-6 mb-16">
-            <h3 className="text-3xl font-stylized text-oasis-umber">Recent & Upcoming</h3>
-            <div className="flex-1 h-px bg-oasis-umber/10" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {upcomingArtists.map((artist, i) => (
-              <motion.div
-                key={artist.name}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative bg-white border border-oasis-umber/10 rounded-[2rem] p-8 hover:bg-oasis-umber hover:border-oasis-umber transition-all duration-500 overflow-hidden"
-              >
-                <div className="relative z-10 space-y-4">
-                  <div className="flex justify-between items-start">
-                    <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-oasis-accent group-hover:text-oasis-gold/60 transition-colors">
-                      {artist.genre}
-                    </span>
-                    <span className="text-[10px] font-bold text-oasis-umber/20 group-hover:text-sand-light/20 uppercase tracking-widest">
-                      {artist.date}
-                    </span>
-                  </div>
-                  <h4 className="text-3xl font-stylized text-oasis-umber group-hover:text-sand-light transition-colors">
-                    {artist.name}
-                  </h4>
-                </div>
-              </motion.div>
-            ))}
-            <motion.div
-              className="relative rounded-[2rem] p-8 flex flex-col justify-center items-center text-center border-2 border-dashed border-oasis-umber/10 hover:border-oasis-accent/40 transition-colors group cursor-pointer"
-            >
-              <Sparkles className="text-oasis-accent mb-4" size={24} />
-              <p className="text-sm font-stylized text-oasis-umber/60">Book for Upcoming Acts</p>
-            </motion.div>
-          </div>
-        </div>
       </div>
     </section>
   );
