@@ -103,7 +103,7 @@ export default function ContactPage() {
                   { icon: <MapPin size={20} />, label: "Address", value: "Hotel Peninsula Grand, Sakinaka Junction, Andheri East, Mumbai — 400072" },
                   { icon: <Phone size={20} />, label: "Phone", value: "+91 81049 61636" },
                   { icon: <Mail size={20} />, label: "Email", value: "info@opabarandcafe.in" },
-                  { icon: <Clock size={20} />, label: "Hours", value: "Open daily — Lunch & Dinner · Till late night" },
+                  { icon: <Clock size={20} />, label: "Hours", value: "Open daily — 5:00 PM to 3:00 AM" },
                   { icon: <TrainFront size={20} />, label: "Metro", value: "Opposite Sakinaka Metro Station (Line 1)" },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6 items-start group">
@@ -168,32 +168,32 @@ export default function ContactPage() {
 
             <div className="space-y-5 text-sand-light/55 text-base leading-relaxed font-light text-center max-w-3xl mx-auto">
               <p>
-                Every day thousands of Mumbaikars search for{" "}
+                When Mumbaikars search for{" "}
                 <strong className="text-sand-light/80">places to eat and drink near me</strong>,{" "}
                 <strong className="text-sand-light/80">best bars in Andheri East</strong>, or the{" "}
-                <strong className="text-sand-light/80">best lounge in Mumbai</strong> — and they all find OPA. Located
-                at Hotel Peninsula Grand opposite Sakinaka Metro Station, OPA is Andheri East's most iconic{" "}
-                <strong className="text-sand-light/80">bar and restaurant in Andheri East</strong>. Whether you're
-                after a relaxed afternoon at our{" "}
-                <strong className="text-sand-light/80">rooftop cafe in Andheri</strong>, a sumptuous dinner at our{" "}
-                <strong className="text-sand-light/80">Mediterranean food restaurant</strong>, or the city's best{" "}
-                <strong className="text-sand-light/80">nightlife in Andheri</strong>, OPA is always the answer.
+                <strong className="text-sand-light/80">best lounge in Mumbai</strong> — one name rises above the rest.
+                Nestled at Hotel Peninsula Grand, opposite Sakinaka Metro Station, OPA is Andheri East's most celebrated{" "}
+                <strong className="text-sand-light/80">bar and restaurant in Andheri East</strong> — where the magic of Middle Eastern dining
+                meets the city's most electric nightlife. From golden-hour dinners at our{" "}
+                <strong className="text-sand-light/80">rooftop cafe in Andheri</strong> to headlining DJ sets deep into the night,
+                every visit at our <strong className="text-sand-light/80">Mediterranean food restaurant</strong> writes an unforgettable story.
               </p>
               <p>
-                With the{" "}
-                <strong className="text-sand-light/80">best Arabian ambience in Mumbai</strong>,{" "}
-                <strong className="text-sand-light/80">best LIT cocktails</strong>, world-class{" "}
-                <strong className="text-sand-light/80">music and ambience</strong>, and a team that ensures every visit
-                is extraordinary — OPA is truly{" "}
-                <strong className="text-sand-light/80">open till late night</strong>, every night of the week.
+                From fragrant mezze and Levantine grills to the glow of our{" "}
+                <strong className="text-sand-light/80">best LIT cocktails</strong>, OPA is built for those who refuse ordinary.
+                The <strong className="text-sand-light/80">best Arabian ambience in Mumbai</strong>, curated{" "}
+                <strong className="text-sand-light/80">music and ambience</strong> that shifts from soulful to electric, and a lineup of
+                resident and international DJs make OPA the definitive address for{" "}
+                <strong className="text-sand-light/80">nightlife in Andheri</strong>. We are always{" "}
+                <strong className="text-sand-light/80">open till late night</strong> — because Mumbai's best moments happen after midnight.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 pt-4">
               {[
-                { stat: "Late Night", label: "Open Every Night" },
-                { stat: "30+", label: "Signature Dishes" },
-                { stat: "4 Zones", label: "Unique Spaces" },
+                { stat: "Since 2012", label: "Mumbai's Iconic Venue" },
+                { stat: "30+", label: "Middle Eastern Dishes" },
+                { stat: "4 Nights", label: "Live DJ Weekly" },
               ].map((s, i) => (
                 <div key={i} className="border border-sand-light/10 rounded-2xl p-5 text-center space-y-1">
                   <p className="text-xl md:text-2xl font-stylized text-oasis-accent">{s.stat}</p>
