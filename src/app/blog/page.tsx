@@ -8,6 +8,24 @@ import { Marquee } from "@/components/Marquee";
 
 const blogs = [
   {
+    slug: "/blog/best-bar-in-andheri-opa-bar-cafe",
+    category: "Dining & Nightlife",
+    title: "Best Bar in Andheri | Premium Dining & Cocktails at Opa",
+    excerpt:
+      "Discover the best bar in Andheri at Opa Bar & Cafe. Enjoy signature cocktails, premium dining, vibrant ambiance, and unforgettable experiences.",
+    image: "/lounge/DSC03299.jpg",
+    tags: ["Best Bar in Andheri", "Premium Dining", "Cocktails Andheri"],
+  },
+  {
+    slug: "/blog/bar-and-restaurant-in-andheri-east",
+    category: "Dining & Bar",
+    title: "Bar and Restaurant in Andheri East | Opa Bar & Cafe",
+    excerpt:
+      "Discover Opa Bar & Cafe, a premium bar and restaurant in Andheri East near Mumbai Airport, known for dining, cocktails, nightlife, and celebrations.",
+    image: "/cafe/DSC03327.jpg",
+    tags: ["Bar & Restaurant Andheri East", "Near Airport Mumbai", "Party Places"],
+  },
+  {
     slug: "/blog/best-bar-in-andheri",
     category: "Nightlife",
     title: "Best Bar in Andheri for Nightlife",
